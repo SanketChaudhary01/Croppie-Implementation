@@ -6,7 +6,7 @@ if (! dialog.showModal) {
 }
 
 showModalButton.addEventListener('click', function() {
-    $('#uploadedFile').croppie('bind', { url: $('#aa').attr('src') });
+    $('#uploadedFile').croppie('bind', { url: $('#aa').attr('src') }).then(function(){console.log("i'm working");});
     dialog.showModal();
 });
 
