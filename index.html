@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Croppie implementation </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.4.1/croppie.min.css">
+</head>
+<body>
+
+  <h2>Image to crop </h2>
+    <div class="img_pos" style="margin-right: auto; margin-left: auto; width: 256px">
+        <img src="./images/user.jpg" id="aa" class="show-modal" />
+    </div>
+      <dialog class="mdl-dialog">
+          <div class="mdl-dialog__content">
+              <div class="image_container">
+                  <img id="uploadedFile" />
+              </div>
+          </div>
+          <div class="mdl-dialog__actions mdl-dialog__actions--full-width mdl-grid" style="display: inline-block; width: 100%">
+              <input type="file" class="sr-only" id="inputImage" name="Upload" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff" style="display: none" >
+              <button type="button" id="uploadButton" onclick="document.getElementById('inputImage').click();"  class="mdl-button mdl-cell mdl-cell--4-col"  style="background-color: #ffcc00;text-align: center">Upload</button>
+              <button type="button" id="savePicCropData" class="mdl-button mdl-cell mdl-cell--4-col"  style="background-color: #ffcc00;text-align: center">Save</button>
+              <button type="button" id="close" class="mdl-button mdl-cell mdl-cell--4-col" style="background-color: #ffcc00;text-align: center">Close</button>
+          </div>
+      </dialog>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.4.1/croppie.js"></script>
+<script src="./js/exif.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
